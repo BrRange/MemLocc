@@ -39,9 +39,9 @@ Mark mark_new(usz size);
 
 void *mark_alloc(Mark *mark, usz size);
 
-void mark_quickPop(Mark *mark, void *mem, usz size);
+void mark_quickPop(Mark *mark, void *mem);
 
-void mark_pop(Mark *mark, void *mem, usz size);
+void mark_pop(Mark *mark, void *mem);
 
 void mark_defragment(Mark *mark);
 
