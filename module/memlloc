@@ -83,8 +83,8 @@ struct module_memlloc{
   struct module_memlloc_mark{
     Mark (*new)(usz size);
     void *(*alloc)(Mark *mark, usz size);
-    void (*quickPop)(Mark *mark, void *mem, usz size);
-    void (*pop)(Mark *mark, void *mem, usz size);
+    void (*quickPop)(Mark *mark, void *mem);
+    void (*pop)(Mark *mark, void *mem);
     void (*defragment)(Mark *mark);
     void (*free)(Mark *mark);
     void (*destroy)(Mark *mark);
